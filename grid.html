@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basis Website met Grid</title>
+    <style>
+        /* Algemene opmaak voor de body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+            height: 100vh;
+        }
+
+        /* Center de grid-container met behulp van grid in de body */
+        body {
+            display: grid;
+            place-items: center; /* Centrer de grid-container */
+        }
+
+        /* Grid container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 kolommen */
+            gap: 20px;
+            width: 80%;
+            height: 50%; /* Zorg ervoor dat de container een beperkte hoogte heeft */
+        }
+
+        /* Basisstijl voor de divs in de grid */
+        .grid-item {
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Specifieke kleuren voor elke div */
+        .grid-item:nth-child(1) {
+            background-color: #4CAF50; /* Groene kleur */
+        }
+
+        .grid-item:nth-child(2) {
+            background-color: #2196F3; /* Blauwe kleur */
+        }
+
+        .grid-item:nth-child(3) {
+            background-color: #FF9800; /* Oranje kleur */
+        }
+
+        .grid-item:nth-child(4) {
+            background-color: #f44336; /* Rode kleur */
+        }
+
+        /* Hover-effect voor de grid-items */
+        .grid-item:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">Div 1</div>
+        <div class="grid-item">Div 2</div>
+        <div class="grid-item">Div 3</div>
+        <div class="grid-item">Div 4</div>
+    </div>
+
+</body>
+</html>
